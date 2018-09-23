@@ -17,8 +17,20 @@
 
         <article class="content">
 
-            <div></div>
+            <div id="form">
 
+                <form action="" method="post">
+
+                    <input id="name" class="input" type="text" placeholder="Nombre" required /><br />
+                    <input id="lat" class="input" type="text" placeholder="Latitud" required /><br />
+                    <input id="lng" class="input" type="text" placeholder="Longitud" required /><br />
+                    
+                    <button id="submit_button" type="submit">Enviar Datos</button>
+                
+                </form>
+
+            </div>
+ 
         </article>
 
         <article class="content">
@@ -27,14 +39,18 @@
 
         </article>
 
+        <h2 id="print"></h2>
+
     </section>
 
-    <script src="scripts/maps.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+    <script src="./scripts/firabase.js"></script>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
     </script>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?AIzaSyAhDJWohyyhmHakhjeEbnxRQoBetmlQdYo&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?AIzaSyBeQ1F7O50h3JXxmyoXxGZlG84adeX70eU&callback=initMap">
     </script>
+    <script src="./scripts/maps.js"></script>
 
 </body>
 </html>
